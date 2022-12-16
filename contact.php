@@ -47,31 +47,31 @@
                                 </tr>
                                 <tr>
                                     <td class="c-o">Phone:</td>
-                                    <td>(12) 345 67890</td>
+                                    <td>+7(499) 277-71-00</td>
                                 </tr>
                                 <tr>
                                     <td class="c-o">Email:</td>
-                                    <td>info.colorlib@gmail.com</td>
+                                    <td>LA999@gmail.com</td>
                                 </tr>
                                 <tr>
                                     <td class="c-o">Fax:</td>
-                                    <td>+(12) 345 67890</td>
+                                    <td>+7(499) 277-71-00</td>
                                 </tr>
                             </tbody>
                         </table>
                     </div>
                 </div>
                 <div class="col-lg-7 offset-lg-1">
-                    <form action="#" class="contact-form">
+                    <form action="Form/form_contact.php" method="post" class="contact-form">
                         <div class="row">
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Your Name">
+                                <input type="text" name="name" placeholder="Your Name">
                             </div>
                             <div class="col-lg-6">
-                                <input type="text" placeholder="Your Email">
+                                <input type="email" name="email" placeholder="Your Email">
                             </div>
                             <div class="col-lg-12">
-                                <textarea placeholder="Your Message"></textarea>
+                                <textarea name="text" placeholder="Your Message"></textarea>
                                 <button type="submit">Submit Now</button>
                             </div>
                         </div>

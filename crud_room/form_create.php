@@ -9,16 +9,16 @@
 </head>
 <body>
 <form action="Form_form_create.php" method="get">
-    <input type="text" name="room"><br><br>
-    <input type="number" name="Room_val"><br><br>
-    <input type="number" name="price"><br><br>
-    <input type="number" name="size"><br><br>
-    <input type="number" name="capacity"><br><br>
-    <input type="text" name="bed"><br><br>
-    <input type="text" name="services"><br><br>
-    <textarea name="description"></textarea><br><br>
-    <textarea name="image"></textarea><br><br>
-    <button type="submit">Нажми езжи</button>
+    Название <input type="text" name="room"><br><br>
+    Количество комнат <input type="number" name="Room_val"><br><br>
+    Цена <input type="number" name="price"><br><br>
+    Размер <input type="number" name="size"><br><br>
+    Количество постояльцев <input type="number" name="capacity"><br><br>
+    Тип кровати <input type="text" name="bed"><br><br>
+    Сервис <input type="text" name="services"><br><br>
+    Описание <textarea name="description"></textarea><br><br>
+    Картинка <textarea name="image"></textarea><br><br>
+    <button type="submit">Создать</button>
 </form>
 </body>
 </html>
