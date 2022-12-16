@@ -16,23 +16,23 @@
             </div>
         </div>
         <?php
-        $db= require $_SERVER['DOCUMENT_ROOT']. '/common/db.php';
-        $items = $db->query("SELECT * FROM testimonials")->fetchAll(PDO::FETCH_ASSOC);
-        foreach ($items as $item):?>
+        $db= require './common/db.php';//Подключаем базу данных
+        $items = $db->query("SELECT * FROM testimonials")->fetchAll(PDO::FETCH_ASSOC);//SQL запрос
+        foreach ($items as $item):?><!--Начало цикла-->
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="testimonial-slider owl-carousel">
                     <div class="ts-item">
-                        <p><?= $item['text']?></p>
+                        <p><?= $item['text']?></p><!--Текст отзыва-->
                         <div class="ti-author">
                             <div class="rating">
-                                <?= $item['feedback']?>/5
+                                <?= $item['feedback']?>/5<!--Оценка отзыва-->
                             </div>
-                            <h5><?= $item['client']?></h5>
+                            <h5><?= $item['client']?></h5><!--Имя пользователя оставивший отзыв-->
                         </div>
                         <img src="img/testimonial-logo.png" alt="">
                     </div>
-                    <?php endforeach;?>
+                    <?php endforeach;?><!--Конец цикла-->
                 </div>
             </div>
         </div>

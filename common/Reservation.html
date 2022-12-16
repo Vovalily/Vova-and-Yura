@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<!--Форма заявки-->
+<form action="Form/form_booking.php" method="post">
+    <div class="check-date">
+        <label for="date-in">Check In:</label>
+        <input type="text" name="chekin"  id="date-in"><!--Поля даты заселения-->
+        <i class="icon_calendar"></i>
+    </div>
+    <div class="check-date">
+        <label for="date-out">Check Out:</label>
+        <input type="text" name="chekout"  id="date-out"><!--Поля даты выселения-->
+        <i class="icon_calendar"></i>
+    </div>
+    <div class="select-option">
+        <label >Guests:</label>
+        <input type="text" id="guest" name="guests"><!--Поля количество постояльцев в номере-->
+
+    </div>
+    <div class="select-option">
+        <label for="room">Room:</label>
+        <select name="room" id="room">
+            <option value="1">1 Room</option>
+            <option value="2">2 Room</option>
+        </select>
+    </div>
+    <button type="submit">Check Availability</button>
+</form>
+<style>
+    #guest{
+        width: 100%;
+        height: 50px;
+        border: 1px solid #ebebeb;
+        border-radius: 2px;
+        font-size: 16px;
+        color: #19191a;
+        text-transform: uppercase;
+        font-weight: 500;
+        padding-left: 20px;
+    }
+</style>
+</body>
+</html>
